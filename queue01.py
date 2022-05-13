@@ -19,7 +19,7 @@ class QueueService(ABC):
         return QueueServiceImplementation()
 
     @abstractmethod
-    def createCommunity(self, req):
+    def callqueue(self, req):
         """
         User signup in Cognito
         :type req: dict
