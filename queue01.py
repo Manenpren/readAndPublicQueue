@@ -35,7 +35,7 @@ class QueueServiceImplementation(QueueService):
         self.client = boto3.client('sqs', region_name='us-east-1')
         self.queue_url = 'redsocial-ws-taks-test'
 
-    def createCommunity(self, req):
+    def callqueue(self, req):
         try:
             logger.info(f'>>> MESSAGE BODY: {req}')
             response = self.client.send_message(
