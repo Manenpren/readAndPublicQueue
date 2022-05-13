@@ -20,7 +20,7 @@ for element in data:
 
 queue_service = QueueService.create()
 
-response_queue = queue_service.createCommunity(response)
+response_queue = queue_service.callqueue(response)
 
 print(f'Response Queue: {response_queue}')
 
